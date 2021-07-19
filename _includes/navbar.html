@@ -20,10 +20,12 @@
       <a href="{{ site.swc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/swc-icon-blue.svg %}" alt="Software Carpentry logo" />
       </a>
+      {% comment %}
       {% elsif site.carpentry == "dc" %}
       <a href="{{ site.dc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/dc-icon-black.svg %}" alt="Data Carpentry logo" />
       </a>
+      {% endcomment %}
       {% elsif site.carpentry == "lc" %}
       <a href="{{ site.lc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/lc-icon-black.svg %}" alt="Library Carpentry logo" />
@@ -35,6 +37,10 @@
       {% elsif site.carpentry == "pilot" %}
       <a href="{{ site.lesson_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/incubator-logo-blue.svg %}" alt="The Carpentries Incubator logo" />
+      </a>
+      {% elsif %}
+      <a href="{{ site.lesson_site }}" class="pull-left">
+        <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/Ed_DaSH_blue_circle.png %}" alt="Ed-DaSH logo" />
       </a>
       {% endif %}
 
