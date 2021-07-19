@@ -53,7 +53,7 @@ Check DC curriculum
 
 # Workshop overview
 
-The course is aimed at non-PI researchers in biomedicine science (PhD students, postdocs, technicians, etc.) who are interested in Open Science, FAIR principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle.
+The course is aimed at non-PI researchers in biomedicine science (PhD students, postdocs, technicians, etc.) who are interested in Open Science, FAIR principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
 
 <br><br>
 
