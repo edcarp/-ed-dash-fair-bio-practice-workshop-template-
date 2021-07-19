@@ -15,7 +15,7 @@ startdate: 2021-10-12      # machine-readable start date for the workshop in YYY
 enddate: 2021-10-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Tomasz Zielinski", "Andrés Romanowski"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Tomasz Zielinski", "Andrés Romanowski", "Ines Boehm (TBC)", "Ben Thomas (TBC)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["first@example.org","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+email: ["bio_rdm@ed.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -102,6 +102,24 @@ the pitch.
 {% include lc/intro.html %}
 {% endif %}
 
+<br>
+
+## Introduction
+
+FIXME Open Science is disruptive. It will change how we do reasearch and how society benefits from it. Making data re-usable is key to this, and FAIR principles are a way: to achieve it.
+
+* But what does it mean in practice?
+* How can a biologist incorporate those principles in their workflow?
+* We will learn that becoming FAIR and following OS practices is a process.
+
+We will teach you how planning and using the correct set of tools you can make your outputs ready for public sharing and reuse. 
+
+This hands-on 4-sessions workshop covers the basics of Open Science and FAIR practices,
+and looks at how to use these ideas in your own projects. The workshop is a mix of lectures
+and hands-on lessons where you will use the approaches learned and implement some of the discussed practices. 
+
+<br>
+
 {% comment %}
 AUDIENCE
 
@@ -117,6 +135,18 @@ workshop is only open to people from a particular institution.
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
+
+
+## Target Audience
+
+PhD students, postdocs, technicians who actively generate or analyse biological data, in majority bench biologists. 
+This course can also be interesting to modellers, data analysts, project managers and advocates of FAIR/Open Data.
+
+<ins>Example of a learner profile:</ins>
+
+Shania T. Wain (she/her) - junior postdoc  
+Shania is starting her first postdoctoral stay. She has recently obtained a PhD in Plant Biology and is very skilled in running plant molecular and physiology experiments. She recently published her first publication, but found the process of preparing all the figures and required information for the publisher as super tedious and time consuming. As a postdoc, she must find an effective way to organise her own research project and the PhD students she is going to supervise...([read more](./learners) ) 
+
 
 {% comment %}
 LOCATION
