@@ -48,12 +48,15 @@ For a workshop please delete the following block until the next dashed-line
 {% comment %}
 Check DC curriculum
 {% endcomment %}
+
 <br>
+
 # Workshop overview
 
 The course is aimed at non-PI researchers in biomedicine science (PhD students, postdocs, technicians, etc.) who are interested in Open Science, FAIR principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle.
 
 <br><br>
+
 {% comment %}
 Check SWC curriculum
 {% endcomment %}
@@ -67,7 +70,9 @@ This block includes the Eventbrite registration widget if
 'eventbrite' has been set in the header.  You can delete it if you
 are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
+
 {% endcomment %}
+
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
@@ -102,7 +107,9 @@ AUDIENCE
 
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
+
 {% endcomment %}
+
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
@@ -119,6 +126,7 @@ if the latitude and longitude of the workshop have been set.  You
 can use https://itouchmap.com/latlong.html to find the lat/long of an
 address.
 {% endcomment %}
+
 {% assign begin_address = page.address | slice: 0, 4 | downcase  %}
 {% if page.address == "online" %}
 {% assign online = "true_private" %}
@@ -127,6 +135,7 @@ address.
 {% else %}
 {% assign online = "false" %}
 {% endif %}
+
 {% if page.latitude and page.longitude and online == "false" %}
 <p id="where">
   <strong>Where:</strong>
