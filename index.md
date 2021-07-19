@@ -190,10 +190,13 @@ address.
 {% endif %}
 
 {% comment %}
+
 DATE
 
 This block displays the date and links to Google Calendar.
+
 {% endcomment %}
+
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
@@ -206,7 +209,9 @@ This block displays the date and links to Google Calendar.
 SPECIAL REQUIREMENTS
 
 Modify the block below if there are any special requirements.
+
 {% endcomment %}
+
 <p id="requirements">
   <strong>Requirements:</strong>
   {% if online == "false" %}
@@ -220,6 +225,7 @@ Modify the block below if there are any special requirements.
 </p>
 
 {% comment %}
+
 ACCESSIBILITY
 
 Modify the block below if there are any barriers to accessibility or
@@ -395,17 +401,25 @@ of code below the Schedule `<h2>` header below with
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
+
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
+
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
+
 {% elsif site.carpentry == "pilot" %}
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. If you would like to know the timing of these breaks in advance, please [contact the workshop organisers](#contact). For a list of lesson sections and estimated timings, [visit the lesson homepage]({{ site.lesson_site }}).
+
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
 See the contents of the _includes/custom-schedule.html file for an example of
 how one of these schedule tables is constructed.
 {% endcomment %}
+
+{% else %}
+{% include custom-schedule.html %}
+
 {% endif %}
 
 <hr/>
