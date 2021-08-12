@@ -55,7 +55,7 @@ Check DC curriculum
 
 The course is aimed at non-PI researchers in biomedicine science (PhD students, postdocs, technicians, etc.) who are interested in Open Science, FAIR (*Findable, Accessible, Interoperable and Reusable*) principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
 
-<br><br>
+
 
 {% comment %}
 Check SWC curriculum
@@ -106,7 +106,7 @@ the pitch.
 
 ## Introduction
 
-Open Science is disruptive. It will change how we do reasearch and how society benefits from it. Making data re-usable is key to this, and FAIR principles are a way: to achieve it.
+Open Science is disruptive. It will change how we do reasearch and how society benefits from it. Making data re-usable is key to this, and FAIR principles are a way to achieve it.
 
 * But what does it mean in practice?
 * How can a biologist incorporate those principles in their workflow?
@@ -121,6 +121,7 @@ and hands-on lessons where you will use the approaches learned and implement som
 <br>
 
 {% comment %}
+
 AUDIENCE
 
 Explain who your audience is.  (In particular, tell readers if the
@@ -206,6 +207,7 @@ This block displays the date and links to Google Calendar.
 {% endif %}
 
 {% comment %}
+
 SPECIAL REQUIREMENTS
 
 Modify the block below if there are any special requirements.
@@ -230,7 +232,9 @@ ACCESSIBILITY
 
 Modify the block below if there are any barriers to accessibility or
 special instructions.
+
 {% endcomment %}
+
 <p id="accessibility">
   <strong>Accessibility:</strong>
 {% if online == "false" %}
@@ -257,10 +261,13 @@ special instructions.
 {% endif %}
 
 {% comment %}
+
 CONTACT EMAIL ADDRESS
 
 Display the contact email address set in the configuration file.
+
 {% endcomment %}
+
 <p id="contact">
   <strong>Contact:</strong>
   Please email
@@ -288,6 +295,7 @@ Display the contact email address set in the configuration file.
 </p>
 
 {% comment %}
+
 WHO CAN ATTEND?
 
 If you would like to specify who can attend the workshop,
@@ -306,13 +314,17 @@ Edit the text to match who can attend the workshop. For instance:
     <strong>Who can attend?:</strong>
     This workshop is open to ....
 </p>
+
 {% endcomment %}
 
 <hr/>
 
 {% comment%}
+
 CODE OF CONDUCT
+
 {% endcomment %}
+
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
@@ -328,6 +340,7 @@ Everyone who participates in Carpentries activities is required to conform to th
 
 
 {% comment %}
+
 Collaborative Notes
 
 If you want to use an Etherpad, go to
@@ -339,7 +352,9 @@ e.g., '2015-06-10-esu'.
 
 Note we also have a CodiMD (the open-source version of HackMD)
 available at https://codimd.carpentries.org
+
 {% endcomment %}
+
 {% if page.collaborative_notes %}
 <h2 id="collaborative_notes">Collaborative Notes</h2>
 
@@ -351,8 +366,11 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 
 
 {% comment %}
+
 SURVEYS - DO NOT EDIT SURVEY LINKS
+
 {% endcomment %}
+
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "pilot" %}
@@ -376,6 +394,7 @@ change the value of `carpentry` to `pilot`.
 
 
 {% comment %}
+
 SCHEDULE
 
 Show the workshop's schedule.
@@ -410,12 +429,14 @@ of code below the Schedule `<h2>` header below with
 {% include lc/schedule.html %}
 
 {% elsif site.carpentry == "pilot" %}
+
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. If you would like to know the timing of these breaks in advance, please [contact the workshop organisers](#contact). For a list of lesson sections and estimated timings, [visit the lesson homepage]({{ site.lesson_site }}).
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
 See the contents of the _includes/custom-schedule.html file for an example of
 how one of these schedule tables is constructed.
+
 {% endcomment %}
 
 {% else %}
@@ -427,6 +448,7 @@ how one of these schedule tables is constructed.
 
 
 {% comment %}
+
 SETUP
 
 Delete irrelevant sections from the setup instructions.  Each
@@ -436,6 +458,7 @@ and end easier to find.
 This is the other place where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
+
 {% endcomment %}
 
 <h2 id="setup">Setup</h2>
@@ -444,11 +467,15 @@ please preview your site before committing, and make sure to run
   To participate in a
   {% if site.carpentry == "swc" %}
   Software Carpentry
+  
   {% elsif site.carpentry == "dc" %}
   Data Carpentry
+  
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
+  
   {% endif %}
+  
   workshop,
   you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
@@ -460,6 +487,7 @@ please preview your site before committing, and make sure to run
 </p>
 
 {% comment %}
+
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
 - recommendations for setting up Learners' workspace so they can follow along
@@ -468,23 +496,31 @@ For online workshops, the section below provides:
 If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
 to include the relevant installation instrucctions.
+
 {% endcomment %}
+
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
 
 {% comment %}
+
 These are the installation instructions for the tools used
 during the workshop.
+
 {% endcomment %}
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
+
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
+
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
+
 {% elsif site.carpentry == "pilot" %}
+
 Please check the "Setup" page of
 [the lesson site]({{ site.lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
