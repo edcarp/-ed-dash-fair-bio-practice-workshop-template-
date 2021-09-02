@@ -4,16 +4,16 @@ title: Ed-DaSH FAIR bio practice
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "The University of Edinburgh"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: ""      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+venue: "University of Edinburgh"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "gb"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
 latitude: "55.96327"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-3.23222"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "12 - 15 October, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "19 - 22 October 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "13:00 - 17:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2021-10-12      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2021-10-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+startdate: 2021-10-19      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2021-10-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Tomasz Zielinski", "Andrés Romanowski"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Tomasz Zielinski", "Andrés Romanowski", "Ines Boehm (TBC)", "Ben Thomas (TBC)"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["bio_rdm@ed.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
@@ -50,14 +50,6 @@ For a workshop please delete the following block until the next dashed-line
 Check DC curriculum
 {% endcomment %}
 
-<br>
-
-# Workshop overview
-
-The course is aimed at non-PI researchers in biomedicine science (PhD students, postdocs, technicians, etc.) who are interested in Open Science, FAIR (*Findable, Accessible, Interoperable and Reusable*) principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
-
-
-
 {% comment %}
 Check SWC curriculum
 {% endcomment %}
@@ -86,9 +78,6 @@ displayed if the 'eventbrite' field in the header is not set.
 </iframe>
 {% endif %}
 
-
-<h2 id="general">General Information</h2>
-
 {% comment %}
 
 INTRODUCTION
@@ -104,9 +93,9 @@ the pitch.
 {% include lc/intro.html %}
 {% endif %}
 
-<br>
+<h2 id="general"> Overview </h2>
 
-## Introduction
+**FAIR in (Biological) Practice**
 
 Open Science is disruptive. It will change how we do reasearch and how society benefits from it. Making data re-usable is key to this, and FAIR principles are a way to achieve it.
 
@@ -120,7 +109,13 @@ This hands-on 4-sessions workshop covers the basics of Open Science and FAIR pra
 and looks at how to use these ideas in your own projects. The workshop is a mix of lectures
 and hands-on lessons where you will use the approaches learned and implement some of the discussed practices. 
 
-<br>
+The course is aimed at non-PI researchers in biomedicine science (PhD students, postdocs, technicians, etc.) who are interested in Open Science, FAIR (*Findable, Accessible, Interoperable and Reusable*) principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
+
+**Ed-DaSH**
+
+Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Biosciences. The [team](https://edcarp.github.io/Ed-DaSH/ed_dash_team.html) has developed workshops using [The Carpentries](https://carpentries.org/) platform on the following topics. See [workshops](https://edcarp.github.io/Ed-DaSH/workshops.html) for dates and registration details. All workshops will be delivered remotely.
+
+<h2 id="general">General Information</h2>
 
 {% comment %}
 
@@ -138,18 +133,6 @@ workshop is only open to people from a particular institution.
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
-
-
-## Target Audience
-
-PhD students, postdocs, technicians who actively generate or analyse biological data, in majority bench biologists. 
-This course can also be interesting to modellers, data analysts, project managers and advocates of FAIR/Open Data.
-
-<ins>Example of a learner profile:</ins>
-
-Shania T. Wain (she/her) - junior postdoc  
-Shania is starting her first postdoctoral stay. She has recently obtained a PhD in Plant Biology and is very skilled in running plant molecular and physiology experiments. She recently published her first publication, but found the process of preparing all the figures and required information for the publisher as super tedious and time consuming. As a postdoc, she must find an effective way to organise her own research project and the PhD students she is going to supervise...([read more](https://carpentries-incubator.github.io/fair-bio-practice/learners/) ) 
-
 
 {% comment %}
 LOCATION
@@ -432,7 +415,9 @@ of code below the Schedule `<h2>` header below with
 
 {% elsif site.carpentry == "pilot" %}
 
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. If you would like to know the timing of these breaks in advance, please [contact the workshop organisers](#contact). For a list of lesson sections and estimated timings, [visit the lesson homepage]({{ site.lesson_site }}).
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. 
+
+{% include custom-schedule.html %}
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
