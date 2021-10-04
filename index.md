@@ -117,6 +117,8 @@ Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Bioscien
 
 <h2 id="general">General Information</h2>
 
+<strong>Registration:</strong> [Online](https://www.epay.ed.ac.uk/conferences-and-events/college-of-medicine-and-veterinary-medicine/school-of-molecular-genetic-and-population-health-sciences/igmm/fair-in-biological-practice)
+
 {% comment %}
 
 AUDIENCE
@@ -354,7 +356,7 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 SURVEYS - DO NOT EDIT SURVEY LINKS
 
 {% endcomment %}
-
+<!-- no surveys yet
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "pilot" %}
@@ -375,7 +377,7 @@ change the value of `carpentry` to `pilot`.
 {% endif %}
 
 <hr/>
-
+no surveys yet -->
 
 {% comment %}
 
