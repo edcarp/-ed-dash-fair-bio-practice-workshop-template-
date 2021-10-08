@@ -109,7 +109,7 @@ This hands-on 4 half-day sessions workshop covers the basics of Open Science and
 and looks at how to use these ideas in your own projects. The workshop is a mix of lectures
 and hands-on lessons where you will use the approaches learned and implement some of the discussed practices. 
 
-The course is aimed at non-PI researchers in biomedicine science (PhD students, postdocs, technicians, etc.) who are interested in Open Science, FAIR (*Findable, Accessible, Interoperable and Reusable*) principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
+The course is aimed at active researchers in biomedicine science (PhD students, postdocs, technicians, young PIs etc.) who are interested in Open Science, FAIR (*Findable, Accessible, Interoperable and Reusable*) principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
 
 **Ed-DaSH**
 
@@ -117,7 +117,8 @@ Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Bioscien
 
 <h2 id="general">General Information</h2>
 
-<strong>Registration:</strong> [Online](https://www.epay.ed.ac.uk/conferences-and-events/college-of-medicine-and-veterinary-medicine/school-of-molecular-genetic-and-population-health-sciences/igmm/fair-in-biological-practice)
+<strong>Registration:</strong> [Online](https://www.epay.ed.ac.uk/conferences-and-events/college-of-medicine-and-veterinary-medicine/school-of-molecular-genetic-and-population-health-sciences/igmm/fair-in-biological-practice)  
+The course is free but there is a 50 pounds holding deposit refunded after attending the workshop.
 
 {% comment %}
 
